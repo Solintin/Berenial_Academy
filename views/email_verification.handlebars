@@ -1,0 +1,47 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Verification Template</title>
+    <style>
+      header{ padding: 24px; margin-bottom: 16px; background: #b94517;
+      font-weight: 700; font-size: 30px; text-align: center; } .food{ color:
+      khaki } .afrika{ color: #fff } .body{ padding: 24px; font-weight: 500;
+      color: #222; font-size: 16px; } .mb-1{ margin-bottom: 4px; } .mb-2{
+      margin-bottom: 8px; } .mb-3{ margin-bottom: 12px; } .my-4,.mb-4{
+      margin-bottom: 16px; } .my-5{ margin-bottom: 30px; margin-top: 30px;
+      },.mb-5{ margin-bottom: 20px; } .mb-6{ margin-bottom: 24px; } a{ padding:
+      8px 24px; border-radius: 999999px; color: #fff !important;
+      text-decoration: none;font-weight: 700; background: #b94517; } .text-base{
+      font-weight: 600; font-size: 16px; }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <span class="food">Berenial</span><span class="afrika">Academy</span>
+    </header>
+
+    <div class="body">
+      <h3 class="mb-3">Hello {{name}},</h3>
+      <p class="mb-3">
+        We're happy you signed up with Berenial Academy. To start exploring the
+        app, please confirm your email address.
+      </p>
+      <div class="my-5">
+        <a
+          class=""
+          href="https://localhost:3000/?email={{email}}&name={{name}}&verificationToken={{verificationToken}}"
+        >Verify Now</a>
+      </div>
+      <h3 class="text-base">The verification link will expire in the next
+        24hours.</h3>
+
+      <div class="my-5 text-base footer">
+        <h3 class="">Welcome to Berenial Academy!</h3>
+        <h3 class="">The Berenial Academy Team</h3>
+      </div>
+    </div>
+  </body>
+</html>
